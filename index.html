@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Murilo Henrique | Portfólio</title>
+  <meta name="description" content="Portfólio de Murilo Henrique — tecnologia, programação e desenvolvimento de projetos." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <div class="cursor-light" id="cursorLight" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <nav class="container nav-inner" aria-label="Navegação principal">
+      <a href="#inicio" class="logo">Murilo<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu"><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" class="active">Início</a></li>
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SEÇÃO 1 — INÍCIO -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow hero-fade" style="--d:.2s">Tecnologia &amp; Programação</p>
+          <h1 class="hero-title" id="heroTitle" aria-label="Murilo Henrique">Murilo Henrique</h1>
+          <p class="hero-sub hero-fade" style="--d:1.5s">Transformando ideias em soluções através da tecnologia.</p>
+          <div class="hero-cta hero-fade" style="--d:1.75s">
+            <a href="#projetos" class="btn btn-primary">
+              Conhecer meus projetos
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="photo-wrap hero-fade" style="--d:1.1s">
+          <!-- Para trocar a foto, edite CONFIG.photo no script.js (ou coloque "foto.jpg" na mesma pasta) -->
+          <div class="photo-frame" id="photoFrame">
+            <img id="photoImg" alt="Foto de Murilo Henrique" width="720" height="900" fetchpriority="high" />
+            <div class="photo-placeholder"><strong>MH</strong><span>Adicione sua foto<br>(foto.jpg)</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 2 — SOBRE -->
+    <section id="sobre">
+      <div class="container">
+        <div class="section-head fall"><h2>Sobre mim</h2></div>
+        <div class="about-grid">
+          <div class="about-text fall" style="--d:.1s">
+            <p>Sou um jovem apaixonado por tecnologia e inovação, atualmente cursando Técnico em Tecnologia da Informação (TI). Tenho interesse em programação, desenvolvimento de sistemas e criação de soluções digitais.</p>
+            <p>Estou sempre buscando aprender novas tecnologias, aprimorar minhas habilidades e transformar conhecimentos em projetos práticos.</p>
+          </div>
+          <div class="skills fall" style="--d:.2s">
+            <h3>Áreas de interesse</h3>
+            <div class="focus-list" id="focusList"></div>
+            <h3>Tecnologias e ferramentas</h3>
+            <div class="chips" id="skillChips"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 3 — PROJETOS -->
+    <section id="projetos">
+      <div class="container">
+        <div class="section-head fall"><h2>Meus Projetos</h2></div>
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Murilo Henrique</p>
+      <p>Feito com <span>dedicação</span> e código.</p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
